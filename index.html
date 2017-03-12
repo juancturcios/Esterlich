@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://blackrockdigital.github.io/startbootstrap-scrolling-nav/js/jquery.easing.min.js"></script>
 
   <script type="text/javascript">
   (function ($) {
@@ -20,11 +21,11 @@ $(document).ready(function(){
 
   // fade in .navbar
 
-      $("#slide").click(function () {
+    //  $("#slide").click(function () {
           // set distance user needs to scroll before we fadeIn navbar
 
-              $('.navbar').fadeIn();
-              $("#PRUEBA").fadeOut();
+          //    $('.navbar').fadeIn();
+            //  $("#PRUEBA").fadeOut();
               $(function() {
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
@@ -32,9 +33,18 @@ $(document).ready(function(){
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
+        $('.navbar').fadeIn();
+
     });
 });
-      });
+
+$(window).scroll(function(){
+if ($(window).scrollTop() > 100)
+{
+$("#PRUEBA").fadeOut();
+}
+});
+    //  });
 
 
 
@@ -120,28 +130,28 @@ $(document).ready(function(){
     </div>
   </nav>
 
-<div class="wrapper">
 
 
-  <section id="PRUEBA" class="section section-header">
-    <div class="pattern-image" style="height:100vh;">
-                    <img src="img/1.png" style="transform: translate3d(0px, 13.3333px, 0px); width:100%; z-index:-1;">
-<!--                     <img src="/assets/img/header6.jpg"/> -->
+
+  <header id="PRUEBA">
+
+                <!--    <img src="img/1.png" style="transform: translate3d(0px, 13.3333px, 0px); width:100%;  z-index:-1;">
+                     <img src="/assets/img/header6.jpg"/> -->
                     <div class="container">
-                        <div class="content">
-                            <h1>Creative Tim</h1>
-                            <div class="separator-container">
-                                <div class="separator line-separator">∎</div>
-                            </div>
-                            <a id="slide" class="page-scroll" href="#parte1"><h1 >Slide down</h1></a>
-                        </div>
-                    </div>
-                </div>
+                      <div class="intro-text">
+              <div class="intro-lead-in">Welcome To Our Studio!</div>
+              <div class="intro-heading">It's Nice To Meet You</div>
+              <a id="slide" class="page-scroll" href="#parte1"><h1 >Slide down</h1></a>
+          </div>
 
-  </section>
-  </div>
+          </div>
 
-    <h1 id="parte1">fasldkfjalskdfjlaskdf</h1>
+  </header>
+<div class="container">
+
+
+
+    <h1 id="parte1">La primera linea</h1>
     <h1>fasldkfjalskdfjlaskdf</h1>
     <h1>fasldkfjalskdfjlaskdf</h1>
     <h1>fasldkfjalskdfjlaskdf</h1>
@@ -182,6 +192,7 @@ $(document).ready(function(){
     <h1>fasldkfjalskdfjlaskdf</h1>
     <h1>fasldkfjalskdfjlaskdf</h1>
     <h1>fasldkfjalskdfjlaskdf</h1>
+    </div>
 
   </body>
 </html>
