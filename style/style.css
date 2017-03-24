@@ -76,3 +76,38 @@ section h3.section-subheading {
   .todo{
     display: none;
   }
+
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: black;
+      opacity: 0.8;
+      z-index: 9999;
+      border: 0;
+      font-size: 10px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 1px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: rgb(255, 255, 255) !important;
+      /*letter-spacing: 2px;*/
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: black !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+.cover2{
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+  height: 100%;
+  width: 100%;
+}
