@@ -126,3 +126,25 @@ section h3.section-subheading {
 .demo a:hover {
     opacity: .5;
 }
+.fondo-principal{
+  background-image: url('../img/1.png');
+  opacity: 1;
+}
+.textoRecycle{
+  margin-left: 30px;
+
+}
+
+.cajas{
+  position: absolute;
+}
+.cajas h3{
+  position: relative;
+  margin-top: 20px;
+  color: white;
+}
+
+.cajas p, .cajas h3{
+  color: white;
+  margin-left: 30px;
+}
