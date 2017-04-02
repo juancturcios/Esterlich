@@ -137,6 +137,7 @@ section h3.section-subheading {
 
 .cajas{
   position: absolute;
+  width: 650px;
 }
 .cajas h3{
   position: relative;
@@ -147,4 +148,15 @@ section h3.section-subheading {
 .cajas p, .cajas h3{
   color: white;
   margin-left: 30px;
+  margin-right: 30px;
+}
+.cajas p{
+  margin-top: -50px;
+  font-size: 12px;
+}
+.linea{
+    margin-bottom: -10px;
+    margin-top: -10px;
+    margin-left: 30px;
+    margin-right: 250px;
 }
